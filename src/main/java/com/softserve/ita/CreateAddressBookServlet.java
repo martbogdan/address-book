@@ -29,6 +29,7 @@ public class CreateAddressBookServlet extends HttpServlet {
         } else {
             message = "An error occurred! Please try again!";
             request.setAttribute("message", message);
+            message = "";
             request.getRequestDispatcher("/WEB-INF/address-book-create.jsp").forward(request, response);
         }
     }
